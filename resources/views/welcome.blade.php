@@ -14,25 +14,40 @@
         main{
             display: grid;
             grid-template-columns: 25% auto;
+            gap: 2px;
             background-color: #3800AF;
         }
         main .sidebar{
             display: grid;
             background-color: #3800AF;
         }
+        footer{
+            background-color: #3800AF;
+        }
     </style>
 </head>
-<body>
+<body class="p-3 b">
     <header>
         <h2 class="text-center text-white my-3 p-4">Start Time: 4:30 & End Time: 5:30</h2>
     </header>
 
     <main>
-        <div class="sidebar">
+        <div class="sidebar ms-3">
             <p class="text-white p-4">Hi. I am Amit Kumar Sutradhar. I have completed my graduation in Computer Science Engineering. I have always been interested in web development and have done several projects based Laravel Framework. I have a passion for learning and sharing my knowledge with others as publicly as possible. I love to solve real-world problems. I am strategic and goal-oriented and always work with an end goal in mind.</p>
         </div>
-        <div class="section">
-            <h2>Hello</h2>
+        <div class="p-3">
+            <div class="cards">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <footer class="text-white">
+                <h1><a href="https://github.com/AmitKumarSutradhar/internship-test" class="text-white">GitHub Repository Link</a> </h1>
+            </footer>
+
         </div>
     </main>
 
