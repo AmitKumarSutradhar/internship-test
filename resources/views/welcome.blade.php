@@ -43,19 +43,19 @@
     </style>
 </head>
 <body class="p-3 b">
-    <header>
-        <h2 class="text-center text-white my-3 p-4">Start Time: 4:30 & End Time: 5:30</h2>
+    <header class="mb-3">
+        <h1 class="text-center text-white my-3 p-4">Start Time: 4:30 & End Time: 5:30</h1>
     </header>
 
     <main>
-        <div class="left-sidebar ">
-            <p class="text-white p-4">Hi. I am Amit Kumar Sutradhar. I have completed my graduation in Computer Science Engineering. I have always been interested in web development and have done several projects based Laravel Framework. I have a passion for learning and sharing my knowledge with others as publicly as possible. I love to solve real-world problems. I am strategic and goal-oriented and always work with an end goal in mind.</p>
+        <div class="left-sidebar text-justify">
+            <h4 class="text-white p-4">Hi. I am Amit Kumar Sutradhar. I have completed my graduation in Computer Science Engineering. I have always been interested in web development and have done several projects based Laravel Framework. I have a passion for learning and sharing my knowledge with others as publicly as possible. I love to solve real-world problems. I am strategic and goal-oriented and always work with an end goal in mind.</h4>
         </div>
-        <div class="p-3 right-sidebar">
+        <div class="main-content">
             <div class="cards">
                 @foreach($posts as $item)
-                    <div class="card p-3 ">
-                        <a href="{{ route('blog.details',$item->id) }}">
+                    <div class="card p-2 ">
+                        <a href="{{ route('blog.details',$item->id) }}" class="bg-white p-3 rounded-top-4">
                             <img src="{{ $item->image }}" class="card-img-top " alt="...">
                         </a>
                         <div class="card-body">
@@ -63,12 +63,15 @@
                                 <h5 class="card-title text-white">{{ $item->title }}</h5>
                             </a>
                             <p class="card-text text-white">{{ $item->title }}</p>
+                            <a href="{{ route('blog.details',$item->id) }}" class="btn btn-primary">View Post</a>
                         </div>
                     </div>
                 @endforeach
             </div>
-            <footer class="text-white text-center mt-3 p-3">
-                <h1><a href="https://github.com/AmitKumarSutradhar/internship-test" class="text-white">GitHub Repository Link</a> </h1>
+            <footer class="text-white text-center mt-3 p-5">
+                <h4>
+                    <a href="https://github.com/AmitKumarSutradhar/internship-test" class="text-white text-decoration-none">GitHub Repository Link:</a>
+                    <a href="https://github.com/AmitKumarSutradhar/internship-test" class="text-white"> https://github.com/AmitKumarSutradhar/internship-test</a> </h4>
             </footer>
 
         </div>

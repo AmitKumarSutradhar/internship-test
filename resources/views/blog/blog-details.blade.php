@@ -10,9 +10,9 @@
 </head>
 <body class="p-3 b">
 
-<div class="">
-    <div class="card p-3 ">
-        <img src="{{ $postDetails->image }}" class="card-img-top " alt="...">
+<div class="mb-3">
+    <div class="card p-3">
+        <img src="{{ $postDetails->image }}" class="" alt="...">
         <div class="card-body">
             <h5 class="card-title">{{ $postDetails->title }}</h5>
             <p class="card-text">{{ $postDetails->description }}</p>
