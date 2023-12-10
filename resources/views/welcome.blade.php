@@ -54,10 +54,14 @@
         <div class="p-3 right-sidebar">
             <div class="cards">
                 @foreach($posts as $item)
-                    <div class="card p-3">
-                        <img src="{{ $item->image }}" class="card-img-top " alt="...">
+                    <div class="card p-3 ">
+                        <a href="{{ route('blog.details',$item->id) }}">
+                            <img src="{{ $item->image }}" class="card-img-top " alt="...">
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title text-white">{{ $item->title }}</h5>
+                            <a href="{{ route('blog.details',$item->id) }}">
+                                <h5 class="card-title text-white">{{ $item->title }}</h5>
+                            </a>
                             <p class="card-text text-white">{{ $item->title }}</p>
                         </div>
                     </div>

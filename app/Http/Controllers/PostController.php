@@ -16,4 +16,9 @@ class PostController extends Controller
 
         return view('welcome', compact('posts'));
     }
+
+    public function blogDetails($id){
+        $postDetails = Post::find($id);
+        return view('blog.blog-details',compact('postDetails'));
+    }
 }
